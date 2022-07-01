@@ -1,0 +1,21 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 giu 2022, 14:35:56
+    Author     : canel
+*/
+
+#pinned-mesure-row {
+    -fx-background-color: green;
+     -fx-text-background-color: white;
+}
+.table-row-cell:highlighted {
+    -fx-background-color: #81c483;
+    -fx-background-radius: 15px;
+}
+
+#not-pinned-mesure-row {
+    -fx-style:"";
+}

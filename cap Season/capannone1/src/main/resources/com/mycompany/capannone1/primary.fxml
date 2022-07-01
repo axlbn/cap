@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="719.0" stylesheets="@css/cssPrimary.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.capannone1.PrimaryController">
+   <children>
+      <HBox prefHeight="439.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="TableViewMisure" onMouseClicked="#MisureTable_click" prefHeight="394.0" prefWidth="180.0">
+              <columns>
+                <TableColumn fx:id="TableColumnMisure" prefWidth="182.0" text="Misure" />
+              </columns>
+            </TableView>
+            <TableView fx:id="TableViewMarca" onMouseClicked="#TableViewMarca_click" prefHeight="394.0" prefWidth="173.0">
+              <columns>
+                <TableColumn fx:id="TableColumnMarca" prefWidth="174.0" text="Marca" />
+              </columns>
+            </TableView>
+            <TableView fx:id="TableViewStag" onMouseClicked="#StagionalitaTable_click" prefHeight="394.0" prefWidth="173.0">
+              <columns>
+                <TableColumn fx:id="TableColumnStag" prefWidth="162.0" text="Stagionalità" />
+              </columns>
+            </TableView>
+            <TableView fx:id="TableViewPneumatici" prefHeight="200.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="TableColumnPneumatici" prefWidth="234.0" text="Pneumatici">
+                     <columns>
+                        <TableColumn fx:id="TableColumnPrezzo" prefWidth="91.0" text="Prezzo €" />
+                        <TableColumn fx:id="TableColumn_C_V" prefWidth="143.0" text="Carico e Velocità" />
+                     </columns></TableColumn>
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="152.0" prefWidth="705.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="235.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="60.0" text="Cerca Per:" />
+                  <ChoiceBox prefHeight="25.0" prefWidth="0.0" />
+                  <TextField prefHeight="25.0" prefWidth="112.0" promptText="scrivi qui" />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="107.0" prefWidth="336.0">
+               <children>
+                  <Button fx:id="btn_aggiungiPneumatico" mnemonicParsing="false" onAction="#btn_aggiungiPneumatico_click" text="Aggiungi Pneumatico" />
+                  <Button fx:id="btn_venduto" mnemonicParsing="false" onAction="#btn_venduto_click" text="Venduto" />
+                  <Button fx:id="btn_modifica" mnemonicParsing="false" onAction="#btn_modifica_click" text="Modifica" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="235.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
